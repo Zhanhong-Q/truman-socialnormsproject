@@ -65,7 +65,7 @@ const passportConfig = require('./config/passport');
  * Create Express server.
  */
 const app = express();
-
+app.use(express.static('public'));
 /**
  * Connect to MongoDB.
  */
